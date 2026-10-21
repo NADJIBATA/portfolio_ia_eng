@@ -368,7 +368,7 @@ export default function Home() {
       <footer className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-xs text-dim sm:flex-row sm:justify-between sm:px-6">
           <p>© {new Date().getFullYear()} {profile.name}</p>
-          <p className="font-mono">Built with Next.js & Tailwind CSS</p>
+          
         </div>
       </footer>
     </>
