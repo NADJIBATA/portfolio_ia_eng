@@ -78,7 +78,7 @@ export const projects: Project[] = [
       "Document pipeline: extraction, cleaning, chunking, metadata enrichment, vector indexing",
       "Configurable reasoning effort and authentication with users' own Redmine accounts",
     ],
-    stack: ["Python", "MCP", "LLM", "RAG", "Hybrid search", "Reranking", "Microservices", "TypeScript"],
+    stack: ["Python", "MCP", "LLM", "RAG", "Hybrid search", "Reranking", "Microservices", "Angular", "TypeScript"],
     links: [
       { label: "Backend", href: "https://github.com/NADJIBATA/RAGMine_backend" },
       { label: "Frontend", href: "https://github.com/NADJIBATA/RAGMine_frontend" },
@@ -88,6 +88,25 @@ export const projects: Project[] = [
       { src: "/projects/ragmine-login.webp", caption: "Sign-in with a Redmine account" },
     ],
     featured: true,
+  },
+  {
+    slug: "apowerb",
+    kicker: "Open source · Contributor",
+    title: "apowerb — framework for production AI agents",
+    summary:
+      "Contributor to apowerb, an open-source (Apache-2.0) platform to build, orchestrate and operate AI agents in production — interactive or fully unattended.",
+    problem:
+      "Moving agents from demos to production needs orchestration, tools, knowledge, scheduling and governance in one self-hostable stack.",
+    highlights: [
+      "Agents built on Google ADK and LiteLLM, composed as sequential, parallel, loop or sub-agent flows",
+      "MCP servers and built-in tools (Google Workspace, Microsoft 365, GitHub, SQL, S3…), RAG and Text-to-SQL",
+      "Scheduled runs, webhooks, guardrails, audit traces and role-based permissions",
+    ],
+    stack: ["Python", "FastAPI", "Google ADK", "LiteLLM", "MCP", "PostgreSQL", "Docker"],
+    links: [
+      { label: "apowerb", href: "https://github.com/apowerb/apowerb" },
+      { label: "My fork", href: "https://github.com/NADJIBATA/apowerb" },
+    ],
   },
   {
     slug: "trace-generation",
@@ -132,8 +151,7 @@ export const projects: Project[] = [
       "Temperature & top-p sampling; interpretability with attention maps, logit lens and ablations",
     ],
     stack: ["PyTorch", "Transformers", "BPE", "Interpretability"],
-    // TODO: replace with the exact repository URL
-    links: [{ label: "GitHub", href: "https://github.com/NADJIBATA?tab=repositories" }],
+    links: [{ label: "Source code", href: "https://github.com/NADJIBATA/MiniGpt_Wikit2text" }],
   },
 ];
 

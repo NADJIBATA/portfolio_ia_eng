@@ -248,7 +248,7 @@ export default function Home() {
               <FeaturedProject key={p.slug} p={p} flip={i % 2 === 1} />
             ))}
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
             {others.map((p) => (
               <ProjectCard key={p.slug} p={p} />
             ))}
@@ -366,8 +366,9 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-xs text-dim sm:flex-row sm:justify-end sm:px-6">
-          <p>© {profile.name}</p>
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-xs text-dim sm:flex-row sm:justify-between sm:px-6">
+          <p>© {new Date().getFullYear()} {profile.name}</p>
+          <p className="font-mono">Built with Next.js & Tailwind CSS</p>
         </div>
       </footer>
     </>

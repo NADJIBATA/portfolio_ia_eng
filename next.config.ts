@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // deployable on Vercel, Netlify, GitHub Pages or any static host.
   output: "export",
   images: { unoptimized: true },
+  // Hide the Next.js "N" badge shown in the corner during `npm run dev`
   devIndicators: false,
 };
 
