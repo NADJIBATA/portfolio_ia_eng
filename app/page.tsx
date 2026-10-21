@@ -366,7 +366,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-line">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-xs text-dim sm:flex-row sm:justify-between sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-xs text-dim sm:flex-row sm:justify-end sm:px-6">
           <p>© {new Date().getFullYear()} {profile.name}</p>
           
         </div>
